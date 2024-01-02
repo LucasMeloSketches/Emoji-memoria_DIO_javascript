@@ -1,14 +1,14 @@
 const emojis = [
     "🤣",
     "🤣",
-    "😑",
-    "😑",
+    "😈",
+    "😈",
     "😱",
     "😱",
     "👻",
     "👻",
-    "😬",
-    "😬",
+    "🤢",
+    "🤢",
     "🥺",
     "🥺",
     "💩",
@@ -31,7 +31,7 @@ for(let i = 0; i < emojis.length; i++){
     document.querySelector(".game").appendChild(box);
 }
 document.querySelector("#tentativas").innerHTML = `você tem ${tentativas} tentativas`;
-setTimeout(startGame, 500);
+setTimeout(startGame, 1000);
 function handleClick(){
     if(openCards.length < 2){
         this.classList.add("boxOpen");
